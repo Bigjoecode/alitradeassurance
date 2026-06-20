@@ -1,0 +1,260 @@
+[16-Feb-2025 21:02:31 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry 'admin' for key 'username' in /home1/fortress/buy.fortresswaveonline.com/scripts/connection.php:60
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/connection.php(60): mysqli->query('INSERT INTO adm...')
+#1 /home1/fortress/buy.fortresswaveonline.com/scripts/login-script.php(3): require_once('/home1/fortress...')
+#2 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/connection.php on line 60
+[16-Feb-2025 21:36:16 UTC] PHP Warning:  Undefined array key "class_id" in /home1/fortress/buy.fortresswaveonline.com/scripts/update-order-product-script.php on line 23
+[16-Feb-2025 21:36:20 UTC] PHP Warning:  Undefined array key "class_id" in /home1/fortress/buy.fortresswaveonline.com/scripts/update-order-product-script.php on line 23
+[17-Feb-2025 02:47:48 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php:41
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php(41): mysqli_stmt->bind_param('ssssi', 'Fuzhou Zhongqia...', 'leo feng', 'jodgewa19@163.c...', '0086-020-360567...', 'Fuzhou Yiqingya...', 'https://sale.al...', '0123abc')
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php on line 41
+[17-Feb-2025 02:48:37 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php:41
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php(41): mysqli_stmt->bind_param('ssssi', 'Fuzhou Zhongqia...', 'leo feng', 'jodgewa19@163.c...', '0086-020-360567...', 'Fuzhou Yiqingya...', 'https://sale.al...', '0123abc')
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php on line 41
+[17-Feb-2025 02:52:07 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php:41
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php(41): mysqli_stmt->bind_param('ssssi', 'Fuzhou Zhongqia...', 'leo feng', 'jodgewa19@163.c...', '0086-020-360567...', 'Fuzhou Yiqingya...', 'https://sale.al...', '0123abc')
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php on line 41
+[17-Feb-2025 02:52:25 UTC] PHP Fatal error:  Uncaught ArgumentCountError: The number of elements in the type definition string must match the number of bind variables in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php:41
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php(41): mysqli_stmt->bind_param('ssssi', 'Fuzhou Zhongqia...', 'leo feng', 'jodgewa19@163.c...', '0086-020-360567...', 'Fuzhou Yiqingya...', 'https://sale.al...', '0123abc')
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/update-site-script.php on line 41
+[17-Feb-2025 03:02:18 UTC] PHP Warning:  Undefined array key "class_id" in /home1/fortress/buy.fortresswaveonline.com/scripts/update-order-product-script.php on line 23
+[17-Feb-2025 03:13:31 UTC] PHP Warning:  Undefined array key "class_id" in /home1/fortress/buy.fortresswaveonline.com/scripts/update-order-product-script.php on line 23
+[17-Feb-2025 03:14:34 UTC] PHP Warning:  Undefined array key "class_id" in /home1/fortress/buy.fortresswaveonline.com/scripts/update-order-product-script.php on line 23
+[17-Feb-2025 03:14:54 UTC] PHP Warning:  Undefined array key "class_id" in /home1/fortress/buy.fortresswaveonline.com/scripts/update-order-product-script.php on line 23
+[17-Feb-2025 11:14:09 UTC] PHP Warning:  Undefined array key "name" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:14:09 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:14:09 UTC] PHP Warning:  Undefined array key "variation" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:14:09 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:14:09 UTC] PHP Warning:  Undefined array key "price" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 19
+[17-Feb-2025 11:14:09 UTC] PHP Warning:  Undefined array key "quantity" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 21
+[17-Feb-2025 11:14:09 UTC] PHP Warning:  Undefined array key "class_number" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 22
+[17-Feb-2025 11:15:40 UTC] PHP Warning:  Undefined array key "name" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:15:40 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:15:40 UTC] PHP Warning:  Undefined array key "variation" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:15:40 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:15:40 UTC] PHP Warning:  Undefined array key "price" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 19
+[17-Feb-2025 11:15:40 UTC] PHP Warning:  Undefined array key "quantity" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 21
+[17-Feb-2025 11:15:40 UTC] PHP Warning:  Undefined array key "class_number" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 22
+[17-Feb-2025 11:17:24 UTC] PHP Warning:  Undefined array key "name" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:17:24 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:17:24 UTC] PHP Warning:  Undefined array key "variation" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:17:24 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:17:24 UTC] PHP Warning:  Undefined array key "price" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 19
+[17-Feb-2025 11:17:24 UTC] PHP Warning:  Undefined array key "quantity" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 21
+[17-Feb-2025 11:17:24 UTC] PHP Warning:  Undefined array key "class_number" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 22
+[17-Feb-2025 11:17:27 UTC] PHP Warning:  Undefined array key "name" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:17:27 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:17:27 UTC] PHP Warning:  Undefined array key "variation" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:17:27 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:17:27 UTC] PHP Warning:  Undefined array key "price" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 19
+[17-Feb-2025 11:17:27 UTC] PHP Warning:  Undefined array key "quantity" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 21
+[17-Feb-2025 11:17:27 UTC] PHP Warning:  Undefined array key "class_number" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 22
+[17-Feb-2025 11:18:48 UTC] PHP Warning:  Undefined array key "name" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:18:48 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 15
+[17-Feb-2025 11:18:48 UTC] PHP Warning:  Undefined array key "variation" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:18:48 UTC] PHP Deprecated:  mysqli::real_escape_string(): Passing null to parameter #1 ($string) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 18
+[17-Feb-2025 11:18:48 UTC] PHP Warning:  Undefined array key "price" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 19
+[17-Feb-2025 11:18:48 UTC] PHP Warning:  Undefined array key "quantity" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 21
+[17-Feb-2025 11:18:48 UTC] PHP Warning:  Undefined array key "class_number" in /home1/fortress/buy.fortresswaveonline.com/scripts/add-product-script.php on line 22
+[20-Feb-2025 08:55:32 UTC] PHP Deprecated:  setcookie(): Passing null to parameter #5 ($domain) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/login-script.php on line 40
+[20-Feb-2025 09:08:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:09:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:13:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:13:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:15:03 UTC] PHP Deprecated:  setcookie(): Passing null to parameter #5 ($domain) of type string is deprecated in /home1/fortress/buy.fortresswaveonline.com/scripts/login-script.php on line 40
+[20-Feb-2025 09:17:39 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:19:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:20:44 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:21:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 09:21:26 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '7' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 19:57:52 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 19:57:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 19:58:38 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[20-Feb-2025 19:59:06 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:12:17 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:14:10 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:14:21 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '2' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:14:42 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '2' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:14:46 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:50:40 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '2' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 04:50:59 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '2' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 08:00:07 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 08:00:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 08:01:14 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[21-Feb-2025 08:01:32 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '6' for key 'class_id' in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/buy.fortresswaveonline.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:16:50 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:17:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:17:51 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:18:25 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:19:12 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:21:27 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:22:01 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[24-Feb-2025 21:25:02 UTC] PHP Deprecated:  setcookie(): Passing null to parameter #5 ($domain) of type string is deprecated in /home1/fortress/tradeassuranceportals.com/scripts/login-script.php on line 40
+[24-Feb-2025 21:28:54 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '3' for key 'class_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:71
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(71): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 71
+[04-Mar-2025 10:01:09 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '298463' for key 'order_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:72
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(72): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 72
+[04-Mar-2025 10:02:33 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '298463' for key 'order_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:72
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(72): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 72
+[04-Mar-2025 10:04:11 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '298463' for key 'order_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:72
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(72): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 72
+[04-Mar-2025 10:20:03 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '298463' for key 'order_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:72
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(72): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 72
+[04-Mar-2025 10:20:48 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '298463' for key 'order_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:72
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(72): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 72
+[04-Mar-2025 10:22:47 UTC] PHP Fatal error:  Uncaught mysqli_sql_exception: Duplicate entry '298463' for key 'order_id' in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php:72
+Stack trace:
+#0 /home1/fortress/tradeassuranceportals.com/scripts/process_order.php(72): mysqli_stmt->execute()
+#1 {main}
+  thrown in /home1/fortress/tradeassuranceportals.com/scripts/process_order.php on line 72

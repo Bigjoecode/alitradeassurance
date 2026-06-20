@@ -1,0 +1,185 @@
+----------------
+2026-02-07 18:43:27
+Payload: {"amount":1396750,"currency":"ZAR","successUrl":"http:\/\/localhost\/alibaba\/payment\/success.php","cancelUrl":"http:\/\/localhost\/alibaba\/payment\/checkout.php?status=cancelled","metadata":{"customerName":" Tawanda Mhute","customerEmail":"","customerPhone":"+263773370161","originalAmountUSD":"755"}}
+Response Code: 400
+Response Body: {
+  "description" : "Invalid protocol for URL: http://localhost/alibaba/payment/success.php, Checkouts with live keys can not have HTTP protocol"
+}
+Curl Error: 
+----------------
+2026-02-07 21:15:35
+Payload: {"amount":1396750,"currency":"ZAR","lineItems":[{"displayName":"Compact Touch ophthalmic ultrasound A-scans B-scans pachymeter","quantity":1,"pricingDetails":{"price":1295000}},{"displayName":"Shipping Fee","quantity":1,"pricingDetails":{"price":74000}},{"displayName":"Tax","quantity":1,"pricingDetails":{"price":27750}}],"successUrl":"http:\/\/localhost\/alibaba\/payment\/success.php","cancelUrl":"http:\/\/localhost\/alibaba\/payment\/checkout.php?status=cancelled","metadata":{"customerName":" Tawanda Mhute","customerEmail":"","customerPhone":"+263773370161","originalAmountUSD":"755"}}
+Response Code: 200
+Response Body: {
+  "id" : "ch_Kg7ba3RQYGrC6d6FbabsjJnE",
+  "redirectUrl" : "https://c.yoco.com/checkout/ch_Kg7ba3RQYGrC6d6FbabsjJnE",
+  "status" : "created",
+  "amount" : 1396750,
+  "currency" : "ZAR",
+  "paymentId" : null,
+  "successUrl" : "http://localhost/alibaba/payment/success.php",
+  "cancelUrl" : "http://localhost/alibaba/payment/checkout.php?status=cancelled",
+  "failureUrl" : null,
+  "metadata" : {
+    "customerName" : " Tawanda Mhute",
+    "customerEmail" : "",
+    "customerPhone" : "+263773370161",
+    "originalAmountUSD" : "755",
+    "checkoutId" : "ch_Kg7ba3RQYGrC6d6FbabsjJnE",
+    "paymentFacilitator" : "yoco-online-checkout"
+  },
+  "merchantId" : "1770050197784-3a1f8866-a3c2-4f73-837f-5d84a6fa2e04",
+  "totalDiscount" : null,
+  "totalTaxAmount" : null,
+  "subtotalAmount" : null,
+  "lineItems" : [ {
+    "displayName" : "Compact Touch ophthalmic ultrasound A-scans B-scans pachymeter",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 1295000,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  }, {
+    "displayName" : "Shipping Fee",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 74000,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  }, {
+    "displayName" : "Tax",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 27750,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  } ],
+  "externalId" : null,
+  "processingMode" : "test",
+  "clientReferenceId" : null
+}
+Curl Error: 
+----------------
+2026-02-07 21:37:43
+Payload: {"amount":1396750,"currency":"ZAR","lineItems":[{"displayName":"Compact Touch ophthalmic ultrasound A-scans B-scans pachymeter","quantity":1,"pricingDetails":{"price":1295000}},{"displayName":"Shipping Fee","quantity":1,"pricingDetails":{"price":74000}},{"displayName":"Tax","quantity":1,"pricingDetails":{"price":27750}}],"successUrl":"http:\/\/localhost\/alibaba\/payment\/success.php","cancelUrl":"http:\/\/localhost\/alibaba\/payment\/checkout.php?status=cancelled","metadata":{"customerName":" Tawanda Mhute","customerEmail":"","customerPhone":"+263773370161","originalAmountUSD":"755"}}
+Response Code: 200
+Response Body: {
+  "id" : "ch_aEqGYQvpbMOFD9ZTy7mi1mxD",
+  "redirectUrl" : "https://c.yoco.com/checkout/ch_aEqGYQvpbMOFD9ZTy7mi1mxD",
+  "status" : "created",
+  "amount" : 1396750,
+  "currency" : "ZAR",
+  "paymentId" : null,
+  "successUrl" : "http://localhost/alibaba/payment/success.php",
+  "cancelUrl" : "http://localhost/alibaba/payment/checkout.php?status=cancelled",
+  "failureUrl" : null,
+  "metadata" : {
+    "customerName" : " Tawanda Mhute",
+    "customerEmail" : "",
+    "customerPhone" : "+263773370161",
+    "originalAmountUSD" : "755",
+    "checkoutId" : "ch_aEqGYQvpbMOFD9ZTy7mi1mxD",
+    "paymentFacilitator" : "yoco-online-checkout"
+  },
+  "merchantId" : "1770050197784-3a1f8866-a3c2-4f73-837f-5d84a6fa2e04",
+  "totalDiscount" : null,
+  "totalTaxAmount" : null,
+  "subtotalAmount" : null,
+  "lineItems" : [ {
+    "displayName" : "Compact Touch ophthalmic ultrasound A-scans B-scans pachymeter",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 1295000,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  }, {
+    "displayName" : "Shipping Fee",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 74000,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  }, {
+    "displayName" : "Tax",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 27750,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  } ],
+  "externalId" : null,
+  "processingMode" : "test",
+  "clientReferenceId" : null
+}
+Curl Error: 
+----------------
+2026-02-26 12:09:03
+Payload: {"amount":1298600,"currency":"ZAR","lineItems":[{"displayName":"Compact Touch ophthalmic ultrasound A-scans B-scans pachymeter","quantity":1,"pricingDetails":{"price":1204000}},{"displayName":"Shipping Fee","quantity":1,"pricingDetails":{"price":68800}},{"displayName":"Tax","quantity":1,"pricingDetails":{"price":25800}}],"successUrl":"http:\/\/localhost\/alibaba\/payment\/success.php","cancelUrl":"http:\/\/localhost\/alibaba\/payment\/checkout.php?status=cancelled","metadata":{"customerName":" Tawanda Mhute","customerEmail":"","customerPhone":"+263773370161","originalAmountUSD":"755"}}
+Response Code: 200
+Response Body: {
+  "id" : "ch_PEPbp4l0bp3fo6DcXm8cPr0x",
+  "redirectUrl" : "https://c.yoco.com/checkout/ch_PEPbp4l0bp3fo6DcXm8cPr0x",
+  "status" : "created",
+  "amount" : 1298600,
+  "currency" : "ZAR",
+  "paymentId" : null,
+  "successUrl" : "http://localhost/alibaba/payment/success.php",
+  "cancelUrl" : "http://localhost/alibaba/payment/checkout.php?status=cancelled",
+  "failureUrl" : null,
+  "metadata" : {
+    "customerName" : " Tawanda Mhute",
+    "customerEmail" : "",
+    "customerPhone" : "+263773370161",
+    "originalAmountUSD" : "755",
+    "checkoutId" : "ch_PEPbp4l0bp3fo6DcXm8cPr0x",
+    "paymentFacilitator" : "yoco-online-checkout"
+  },
+  "merchantId" : "1770050197784-3a1f8866-a3c2-4f73-837f-5d84a6fa2e04",
+  "totalDiscount" : null,
+  "totalTaxAmount" : null,
+  "subtotalAmount" : null,
+  "lineItems" : [ {
+    "displayName" : "Compact Touch ophthalmic ultrasound A-scans B-scans pachymeter",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 1204000,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  }, {
+    "displayName" : "Shipping Fee",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 68800,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  }, {
+    "displayName" : "Tax",
+    "quantity" : 1,
+    "pricingDetails" : {
+      "price" : 25800,
+      "taxAmount" : null,
+      "discountAmount" : null
+    },
+    "description" : null
+  } ],
+  "externalId" : null,
+  "processingMode" : "test",
+  "clientReferenceId" : null
+}
+Curl Error: 

